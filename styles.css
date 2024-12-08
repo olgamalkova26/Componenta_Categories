@@ -9,18 +9,44 @@ body {
 }
 
 .card {
-  border-radius: 2rem;
-  background-color: grey;
-  border: 2px solid black;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  padding: 20px;
+  max-width: 300px;
   width: 100%;
-  padding: 15px;
+  border: 2px solid rgb(203, 204, 214);
 }
 
 .header1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
+
 .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.content div {
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.category:first-child {
+  background-color: black;
+  color: white;
+}
+
+/* tohle jsem řešila s AI, poradila mi zvýšit specifičnost aby mi to odstranilo ohraničení buňky */
+.content .link-style {
+  border: none;
+  text-decoration: underline;
+  padding: 8px 0;
+  color: grey;
+  background-color: transparent;
 }
